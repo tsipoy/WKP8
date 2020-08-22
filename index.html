@@ -15,16 +15,16 @@
         </header>
         <div class="container">
             <div class="first">
-                <form action="/">
+                <form action="/" class="add">
                     <h2>Add a song</h2>
-                    <label for="song-title">Song title
-                        <input type="text" id="song-title" placeholder="Title" required>
+                    <label for="title">Song title
+                        <input type="text" id="title" placeholder="Title" required>
                     </label>
-                    <label for="artist-name">Artist name
-                        <input type="text" id="artist-name" placeholder="Atrist name" required>
+                    <label for="name">Artist name
+                        <input type="text" id="name" placeholder="Atrist name" required>
                     </label>
-                    <label for="select-style">Song style
-                        <select name="style" id="select-style" aria-placeholder="Song Style">
+                    <label for="style">Song style
+                        <select name="style" id="style" aria-placeholder="Song Style">
                             <option value="slow">Slow</option>
                             <option value="electronic">Electronic</option>
                             <option value="rock">Rock</option>
@@ -35,20 +35,17 @@
                             <option value="basesa">Basesa</option>
                         </select>
                     </label>
-                    <label for="song-lenght">Song lenght
-                        <input type="text" id="song-lenght" placeholder="Lenght" required>
+                    <label for="lenght">Song lenght
+                        <input type="number" id="length" placeholder="length" required>
                     </label>
                     <img src="/" alt>
-                    <button class="add-btn">Add</button>
+                    <button class="add-btn" type="submit">Add</button>
                 </form>
             </div>
             <div class="second">
                 <form action="/" class="search">
                     <label for="search-song"> Search a song
                         <input type="text" id="search-song" placeholder="Enter a song title">
-                    </label>
-                    <label for="select-song">Select a style
-                        <input type="text" id="select-song">
                     </label>
                     <label for="select-style">Select a style
                         <select name="style" id="select-style" placeholder="All style">
@@ -65,15 +62,7 @@
                     <button class="reset-btn">reset filters</button>
                 </form>
                 <div class="result">
-                    <nav>
-                        <ul>
-                            <li><img src="./image/antsan-i-kristy.jpg" alt width="100" height="100"></li>
-                            <li>HOIKLnm,djskf</li>
-                            <li>FYGHKNDMuijk</li>
-                            <li>yfghkajgm</li>
-                            <li>gykhjgkj</li>
-                        </ul>
-                    </nav>
+                    <nav></nav>
                 </div>
             </div>
         </div>

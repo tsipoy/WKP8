@@ -20,6 +20,11 @@ form {
     flex-wrap: wrap;
 }
 
+.first,
+.second {
+    max-width: 100%;
+}
+
 .search,
 .second {
     background-color: white;
