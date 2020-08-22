@@ -92,5 +92,15 @@ ul {
     color: blue;
     border: blue 1px solid;
     border-radius: 5px;
-    max-width: 100%;
+    margin-inline-start: 2rem;
+}
+
+.add-score {
+    color: white;
+    background-color: blue;
+}
+
+span {
+    color: black;
+    opacity: 0.5;
 }
