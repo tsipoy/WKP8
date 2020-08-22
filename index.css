@@ -1,0 +1,91 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    background-color: gainsboro;
+    padding-block-start: 2rem;
+    padding-inline-start: 1rem;
+    padding-block-end: 2rem;
+    padding-inline-end: 1rem;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.search,
+.second {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1rem;
+    padding-block-start: 1rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    background-color: gainsboro;
+    max-width: 50%;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: blue;
+    max-width: 30%;
+    color: white;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.reset-btn {
+    color: blue;
+    border: blue 1px solid;
+    border-radius: 5px;
+    max-width: 100%;
+}
