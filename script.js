@@ -13,10 +13,10 @@ const listsSong = () => {
     const html = songs.map(song => {
         return `
             <ul>
-                <li><img src="${song.image}" alt="${song.name}" width="100" height="100"></li>
+                
                 <li>${song.name}<br><span>Song style: ${song.style}</span></li>
                 <li>${song.title}<br><span>Song lenght: ${song.length} min</span></li>
-                <li class="score">SCORE:</li>
+                <li class="score">SCORE:0</li>
                 <li class="add-score">
                     <button
                         value="${song.id}"
