@@ -1,6 +1,22 @@
 console.log("it works");
 
-let songs = [];
+let songs = 
+    [
+        {
+            title: 'Beautiful in white',
+            name: 'Westlife',
+            style: 'slow',
+            lenght: 4,
+            id: 4,
+        },
+        {
+            title: 'PitBul',
+            name: 'Option',
+            style: 'Pop',
+            lenght: 5,
+            id: 6,
+        },
+    ];
 
 // Grab elements 
 const form = document.querySelector('.add');
@@ -13,7 +29,7 @@ const listsSong = () => {
     const html = songs.map(song => {
         return `
             <ul>
-                
+                <li><img src="${song.image}" alt="${song.name}" width="100" height="100"></li>
                 <li>${song.name}<br><span>Song style: ${song.style}</span></li>
                 <li>${song.title}<br><span>Song lenght: ${song.length} min</span></li>
                 <li class="score">SCORE:0</li>
@@ -46,10 +62,14 @@ listsSong();
 
 const addSongs = e => {
     e.preventDefault();
-    const title = e.target.title.value;
-    const name = e.target.name.value;
-    const style = e.target.style.value;
-    const length = e.target.length.value;
+    const title = e.currentTarget.title.value;
+    console.log(title);
+    const name = e.currentTarget.name.value;
+    console.log(name);
+    const style = e.currentTarget.style.value;
+    console.log(style);
+    const length = e.currentTarget.length.value;
+    console.log(length);
 
     const addLists = {
         title: title,
@@ -60,6 +80,7 @@ const addSongs = e => {
     };
 
     songs.push(addLists);
+    console.log(songs)
     e.currentTarget.reset();
     showResult.dispatchEvent(new CustomEvent('updatedSongs'));
     console.log(addLists);

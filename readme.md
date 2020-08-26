@@ -20,3 +20,5 @@
 - filter the list by searching for a song title
 - filter the list by searching for a song title
 
+### Other comments
+When I coded last saturday, add button and delete button were working but it doesn't work now. I don't know where is the problems.
